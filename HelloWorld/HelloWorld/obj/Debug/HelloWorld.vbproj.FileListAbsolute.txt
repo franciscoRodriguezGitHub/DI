@@ -1,0 +1,12 @@
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.xml
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.vbprojResolveAssemblyReference.cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Resources.resources
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.vbproj.GenerateResource.Cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.vbproj.CoreCompileInputs.cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.xml
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

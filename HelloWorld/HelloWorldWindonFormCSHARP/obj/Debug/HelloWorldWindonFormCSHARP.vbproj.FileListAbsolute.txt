@@ -1,0 +1,11 @@
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\bin\Debug\HelloWorldWindonFormCSHARP.exe.config
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\bin\Debug\HelloWorldWindonFormCSHARP.exe
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\bin\Debug\HelloWorldWindonFormCSHARP.pdb
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\bin\Debug\HelloWorldWindonFormCSHARP.xml
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.vbprojResolveAssemblyReference.cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.Resources.resources
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.vbproj.GenerateResource.Cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.vbproj.CoreCompileInputs.cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.exe
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.xml
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\HelloWorldWindonFormCSHARP\obj\Debug\HelloWorldWindonFormCSHARP.pdb

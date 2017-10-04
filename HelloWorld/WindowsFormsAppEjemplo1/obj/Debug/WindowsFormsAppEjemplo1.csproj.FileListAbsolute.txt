@@ -1,0 +1,10 @@
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\bin\Debug\WindowsFormsAppEjemplo1.exe.config
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\bin\Debug\WindowsFormsAppEjemplo1.exe
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\bin\Debug\WindowsFormsAppEjemplo1.pdb
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.csprojResolveAssemblyReference.cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.Form1.resources
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.Properties.Resources.resources
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.csproj.GenerateResource.Cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.csproj.CoreCompileInputs.cache
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.exe
+C:\Users\fjrodriguez\Desktop\VisualStudio\HelloWorld\WindowsFormsAppEjemplo1\obj\Debug\WindowsFormsAppEjemplo1.pdb
