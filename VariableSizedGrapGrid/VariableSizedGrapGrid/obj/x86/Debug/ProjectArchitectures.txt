@@ -1,0 +1,1 @@
+C:\Users\fjrodriguez\Desktop\DI\VariableSizedGrapGrid\VariableSizedGrapGrid\VariableSizedGrapGrid.csproj;x86
