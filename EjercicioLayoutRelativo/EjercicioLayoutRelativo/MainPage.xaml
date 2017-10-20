@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="EjercicioLayoutRelativo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EjercicioLayoutRelativo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border Margin="10"  Padding="10" BorderBrush="Black" BorderThickness="1" Name="border1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" >
+            <Grid>
+                <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." TextWrapping="Wrap" ></TextBlock>
+            </Grid>
+        </Border>
+        <Border Margin="10"  BorderBrush="Black"  Padding="10" BorderThickness="1" RelativePanel.Below="border1" Name="border2" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True"  >
+            <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." TextWrapping="Wrap" ></TextBlock>
+        </Border>
+        <Grid  RelativePanel.Below="border2" Name="grid"
+              BorderBrush="Black" BorderThickness="1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <VariableSizedWrapGrid Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Margin="10">
+                <Rectangle Width="100" Height="100" Fill="Red" Margin="10" ></Rectangle>
+                <Rectangle Width="100" Height="100" Fill="Green" Margin="10" ></Rectangle>
+                <Rectangle Width="100" Height="100" Fill="Black"  Margin="10"></Rectangle>
+                <Rectangle Width="100" Height="100" Fill="Orange" Margin="10" ></Rectangle>
+            </VariableSizedWrapGrid>
+            <VariableSizedWrapGrid Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="20" >
+                <Border  BorderBrush="Black" BorderThickness="1" Padding="10" Margin="10">
+                    <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." TextWrapping="Wrap" ></TextBlock>
+                </Border>
+                <Border  BorderBrush="Black" BorderThickness="1" Padding="10" Margin="10">
+                    <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." TextWrapping="Wrap" ></TextBlock>
+                </Border>
+            </VariableSizedWrapGrid>
+        </Grid>
+        <Border Margin="10" BorderBrush="Black"  Padding="10" BorderThickness="1" RelativePanel.Below="grid" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True"  >
+            <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." TextWrapping="Wrap" ></TextBlock>
+        </Border>
+    </RelativePanel>
+    
+</Page>
