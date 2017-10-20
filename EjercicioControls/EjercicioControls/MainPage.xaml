@@ -55,7 +55,7 @@
                     <!--Pivot content goes here-->
                     <TextBlock Text="Contenido pivot 2"/>
                 </PivotItem>
-                <PivotItem Header="Pivot tres">
+                <PivotItem Header="Pivot tresff">
                     <!--Pivot content goes here-->
                     <TextBlock Text="Contenido pivot 3"/>
                 </PivotItem>
