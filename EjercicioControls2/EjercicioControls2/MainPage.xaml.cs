@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
-namespace EjercicioControls
+namespace EjercicioControls2
 {
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
@@ -25,7 +25,7 @@ namespace EjercicioControls
     {
         //Declaro el objeto font
         ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
-    
+
         private int cont = 0;
 
 
@@ -44,6 +44,7 @@ namespace EjercicioControls
                 {
 
                     ShowMessage("Añadir selecion: " + x.Date.ToString("dd/MM/yyyy"));
+                   
                 });
                 //si la fecha esta selecionada se borra la seleccion
                 f.RemovedDates.ToList().ForEach(x =>
@@ -67,11 +68,10 @@ namespace EjercicioControls
                     else if (cont == 1)
                     {
                         calendario2.MaxDate = x.Date;
+                       
                     }
                 });
             };
-
-            
         }
         private HashSet<DateTimeOffset> validDates = new HashSet<DateTimeOffset>
             {
