@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="_15_Solarizr.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_15_Solarizr"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#54B0E1">
+        <RelativePanel>
+            <Image Source="/Assets/Images/circle_right.png" Width="100" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                   RelativePanel.Above="stackpanelito"/>
+            <StackPanel Name="stackpanelito" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                       RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0 10" MinWidth="100">
+                <Border BorderBrush="White" BorderThickness="0 0 0 3">
+                <TextBlock Text="Login" FontWeight="Bold" Foreground="White"/>
+                </Border>
+                <TextBlock Name="lblUsuario" Text="Usuario" FontWeight="Bold" Foreground="White"/>
+            <TextBox Name="txtUsuario" />
+            <TextBlock Name="lblContrasenha"  Text="Contraseña" Foreground="White"
+                       FontWeight="Bold"/>
+            <PasswordBox Name="pswContrasenha"/>
+            </StackPanel>
+        </RelativePanel>
+
+    </Grid>
+</Page>
