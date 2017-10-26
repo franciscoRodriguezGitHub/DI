@@ -1,0 +1,117 @@
+<Page
+    x:Class="_15_Solarizr.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_15_Solarizr"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel>
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  
+               CompactPaneLength="50" OpenPaneLength="150" 
+               IsPaneOpen="{Binding ElementName=HamburgerButton, Path=IsChecked}"
+                    RelativePanel.Below="stackpanel" >
+            <SplitView.Pane>
+                <StackPanel Background="Black" >
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE825;"
+                    Width="50" Height="50" Foreground="White"/>
+                        <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
+                        Width="50" Height="50" Background="Transparent" Foreground="White" />
+                        <TextBlock Text="Button 2" FontSize="18" VerticalAlignment="Center" Foreground="White" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Content="&#xE1D6;"
+                        Width="50" Height="50" Background="Transparent" Foreground="White" />
+                        <TextBlock Text="Button 3" FontSize="18" VerticalAlignment="Center" Foreground="White" />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+            
+
+                    <!-- The ListView Control -->
+                    <ListView x:Name="ListView1" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <!-- ItemTemplate: ItemData is linked to the DataMembers of the ListView ItemsSource. -->
+                                    <Border BorderBrush="Black" BorderThickness="1,1,0,0" Grid.Column="0" >
+                                        <TextBlock Text="hola" />
+                                    </Border>
+                                    <Border BorderBrush="Black" BorderThickness="1,1,0,0" Grid.Column="1" >
+                                        <TextBlock Text="hola" />
+                                    </Border>
+                                    <Border BorderBrush="Black" BorderThickness="1,1,0,0" Grid.Column="2" >
+                                        <TextBlock Text="hola" />
+                                    </Border>
+                                    <Border BorderBrush="FF000000" BorderThickness="1,1,0,0" Grid.Column="3" >
+                                        <TextBlock Text="hola" />
+                                    </Border>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.Template>
+                            <!-- We Change the ListView's Template to add the Column Headers as requested. -->
+                            <ControlTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <!-- Columns Header: Will be like normal Grid.Row. -->
+                                        <RowDefinition Height="*"/>
+                                        <!-- ListView Rows. -->
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Border  Grid.Column="0">
+                                            <TextBlock>Data Member #1</TextBlock>
+                                        </Border>
+                                        <Border  Grid.Column="1">
+                                            <TextBlock>Data Member #2</TextBlock>
+                                        </Border>
+                                        <Border  Grid.Column="2">
+                                            <TextBlock>Data Member #3</TextBlock>
+                                        </Border>
+                                        <Border  Grid.Column="3">
+                                            <TextBlock>Data Member #4</TextBlock>
+                                        </Border>
+                                    </Grid>
+
+                                    <!-- Our ListView's Regular Rows. -->
+                                    <ItemsPresenter Grid.Row="1"></ItemsPresenter>
+                                </Grid>
+                            </ControlTemplate>
+                        </ListView.Template>
+                    </ListView>
+               
+            </SplitView.Content>
+        </SplitView>
+        <StackPanel Orientation="Horizontal" Height="48" 
+                VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                Background="{ThemeResource SystemControlBackgroundAccentBrush}" 
+                   RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"
+                   Name="stackpanel">
+            <ToggleButton x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+                    Width="50" Height="50" Background="Blue"  Foreground="White"
+                    />
+            <TextBlock Foreground="White" Text="Placa Solare "
+                  HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontSize="20" Margin="20 0 0 0"/>
+        </StackPanel>
+    </RelativePanel>
+</Page>
