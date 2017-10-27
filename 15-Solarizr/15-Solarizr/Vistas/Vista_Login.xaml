@@ -9,20 +9,32 @@
 
     <Grid Background="#54B0E1">
         <RelativePanel>
-            <Image Source="/Assets/Images/circle_right.png" Width="100" RelativePanel.AlignHorizontalCenterWithPanel="True"
+            <Image Source="/Assets/Images/circle_right.png" Width="200" RelativePanel.AlignHorizontalCenterWithPanel="True"
                    RelativePanel.Above="stackpanelito"/>
             <StackPanel Name="stackpanelito" RelativePanel.AlignHorizontalCenterWithPanel="True"
-                       RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0 10" MinWidth="100">
+                       RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0 10" MinWidth="200">
                 <Border BorderBrush="White" BorderThickness="0 0 0 3">
-                <TextBlock Text="Login" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="Login" FontWeight="Bold" Foreground="White" Margin="0 5"/>
                 </Border>
-                <TextBlock Name="lblUsuario" Text="Usuario" FontWeight="Bold" Foreground="White"/>
-            <TextBox Name="txtUsuario" />
-            <TextBlock Name="lblContrasenha"  Text="Contraseña" Foreground="White"
-                       FontWeight="Bold"/>
-            <PasswordBox Name="pswContrasenha"/>
+                <StackPanel Orientation="Horizontal" CornerRadius="10" Background="White" Margin="0 5">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" Foreground="Black" Padding="10" FontWeight="Bold"/>
+                    <TextBox BorderThickness="0" Padding="5" MaxWidth="100"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" CornerRadius="10" Background="White" Margin="0 5">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE8D7;" Foreground="Black" Padding="10" FontWeight="Bold"/>
+                    <PasswordBox BorderThickness="0" Padding="5" MaxWidth="100"/>
+                </StackPanel>
             </StackPanel>
+            <CheckBox x:Name="CheckBox"  RelativePanel.Below="stackpanelito" RelativePanel.AlignLeftWith="stackpanelito">
+                <TextBlock Text="Recuérdame" Foreground="White"/>
+            </CheckBox>
+            <Button Name="btnLogin" Background="White" Content="Login"
+                     RelativePanel.Below="stackpanelito"
+                     RelativePanel.AlignRightWith="stackpanelito"
+                    Click="btnLogin_Click"/>
+            <HyperlinkButton Content="¿Has olvidado la contraseña?" NavigateUri="http://www.google.com" 
+                            RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.Below="btnLogin"
+                              Foreground="Blue"/>
         </RelativePanel>
-
     </Grid>
 </Page>

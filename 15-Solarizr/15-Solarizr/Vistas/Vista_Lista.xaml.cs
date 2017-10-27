@@ -26,5 +26,10 @@ namespace _15_Solarizr.Vistas
         {
             this.InitializeComponent();
         }
+
+        private void btnCliente_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Vista_Cliente));
+        }
     }
 }

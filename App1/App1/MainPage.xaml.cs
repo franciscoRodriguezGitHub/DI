@@ -12,11 +12,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using _15_Solarizr.Vistas;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
-namespace _15_Solarizr
+namespace App1
 {
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
@@ -26,12 +25,6 @@ namespace _15_Solarizr
         public MainPage()
         {
             this.InitializeComponent();
-            
-        }
-
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Vista_Lista));
         }
     }
 }
