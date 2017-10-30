@@ -9,7 +9,7 @@
 
     <RelativePanel Background="#54B0E1">
         <CommandBar x:Name="commandBar1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" >
-            <AppBarButton x:Name="appBarButton" Icon="Save" Label="Guardar"/>
+            
             <AppBarButton x:Name="appBarButton1" Icon="Back" Label="Volver" Click="btnAtras_Click" />
             <AppBarSeparator x:Name="appBarSeparator1"/>
             <AppBarButton x:Name="appBarButton2" Icon="Cancel" Label="Salir" Click="btnSalir" />
