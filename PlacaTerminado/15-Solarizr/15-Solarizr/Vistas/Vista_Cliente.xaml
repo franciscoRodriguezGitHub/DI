@@ -16,6 +16,11 @@
         </CommandBar>
         <TextBlock  Name="txtCliente" RelativePanel.Below="commandBar1" Foreground="White" Text="Cliente: Pepito" Margin="20"
                     RelativePanel.AlignLeftWithPanel="True" FontWeight="Bold"></TextBlock>
+        <StackPanel Orientation="Horizontal" RelativePanel.Below="commandBar1" RelativePanel.AlignRightWithPanel="True" Margin="0 20 20 0" >
+            <Button x:Name="galeria" FontFamily="Segoe MDL2 Assets" Content="&#xE8D4;"
+                    Width="50" Foreground="White" VerticalAlignment="Stretch"  Click="btnGaleria_Click" />
+            <TextBlock Foreground="White" Text="Galeria" FontSize="18" Margin="10 0 0 0" VerticalAlignment="Center" />
+        </StackPanel>
         <Maps:MapControl Height="200" RelativePanel.Below="txtCliente" RelativePanel.AlignLeftWithPanel="True"
                          RelativePanel.AlignRightWithPanel="True"
        x:Name="MapControl1"            
@@ -29,8 +34,8 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal" RelativePanel.Below="MapControl1" RelativePanel.AlignRightWithPanel="True" Margin="0 20 20 0" >
             <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE722;"
-                    Width="50" Foreground="White" VerticalAlignment="Stretch" Click="btnGaleria_Click"/>
-            <TextBlock Foreground="White" Text="Galería" FontSize="18" Margin="10 0 0 0" VerticalAlignment="Center" />
+                    Width="50" Foreground="White" VerticalAlignment="Stretch" />
+            <TextBlock Foreground="White" Text="Añadir Foto" FontSize="18" Margin="10 0 0 0" VerticalAlignment="Center" />
         </StackPanel>
 
         <TextBox Margin="20" RelativePanel.Below="Radio" RelativePanel.AlignLeftWithPanel="True"

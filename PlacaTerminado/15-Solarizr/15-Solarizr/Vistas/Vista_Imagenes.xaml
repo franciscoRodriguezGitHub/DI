@@ -16,10 +16,14 @@
         </CommandBar>
         <TextBlock  Name="txtCliente" RelativePanel.Below="commandBar1" Foreground="White" FontWeight="Bold" Text="Cliente: Pepito" Margin="20"
                     RelativePanel.AlignLeftWithPanel="True"></TextBlock>
+        <FlipView x:Name="flipView1" RelativePanel.Below="txtCliente" >
+            <Image Source="/Assets/Images/placa1.jpg" />
+            <Image Source="/Assets/Images/placa2.jpg" />
+        </FlipView>
 
-        <Pivot x:Name="rootPivot" RelativePanel.Below="txtCliente" Title="Galeria De Imágenes">
+        <!--<Pivot x:Name="rootPivot" RelativePanel.Below="txtCliente" Title="Galeria De Imágenes">
             <PivotItem Header="Imagen1">
-                <!--Pivot content goes here-->
+                --><!--Pivot content goes here--><!--
                 <Image Source="/Assets/Images/placa1.jpg" Width="200" RelativePanel.AlignHorizontalCenterWithPanel="True"
                   />
             </PivotItem>
@@ -32,6 +36,6 @@
 
 
             </PivotItem>
-        </Pivot>
+        </Pivot>-->
     </RelativePanel>
 </Page>
