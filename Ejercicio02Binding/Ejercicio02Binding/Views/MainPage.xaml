@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="Ejercicio02Binding.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ejercicio02Binding"
+    xmlns:localModel="using:Ejercicio02Binding.ViewModels"
+    
+    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <localModel:clsMainPageVM></localModel:clsMainPageVM>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--<ListView x:Name="itemListView" Grid.Column="0" DisplayMemberPath="Nombre"  ItemsSource="{Binding listado}"/>-->
+        <ListView x:Name="itemListView" Grid.Column="0"   ItemsSource="{Binding listapersona}" SelectedItem="{Binding personaSeleccionada,Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel  VerticalAlignment="Top" Orientation="Horizontal" Margin="10,0,0,0">
+                        <TextBlock Text="{Binding Nombre}"   Margin="10,0,0,0" TextWrapping="NoWrap"/>
+                        <TextBlock Text="{Binding Apellido}"  Margin="10,0,0,0" TextWrapping="NoWrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+              <TextBlock Text="Nombre"></TextBlock>
+              <TextBox Text="{Binding personaSeleccionada.Nombre,Mode=TwoWay}" ></TextBox>
+            <TextBlock Text="Apellido"></TextBlock>
+            <TextBox Text="{Binding personaSeleccionada.Apellido,Mode=TwoWay}" ></TextBox>
+        </StackPanel>
+
+        <!--<StackPanel Grid.Column="1" Orientation="Vertical">
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="Nombre"></TextBlock>
+                <TextBox Name="txtNombre"></TextBox>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="Apellido"></TextBlock>
+                <TextBox Name="txtApellido"></TextBox>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="Fecha"></TextBlock>
+                <TextBox Name="txtFecha"></TextBox>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="telefono"></TextBlock>
+                <TextBox Name="txtTelefono"></TextBox>
+            </StackPanel>
+        </StackPanel>-->
+
+    </Grid>
+</Page>
